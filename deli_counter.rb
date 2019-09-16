@@ -13,3 +13,11 @@ def take_a_number(Katz_deli, "Ada")
     puts "Welcome, #{Katz_deli}. You are number #{index+1} in line"
 end
 
+def now_serving(array)
+  if array.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{array[0]}."
+    array.shift
+  end
+end
